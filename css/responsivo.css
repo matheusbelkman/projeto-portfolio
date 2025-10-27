@@ -5,6 +5,23 @@
     #skill-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    #projeto-container .projeto {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #projeto-container .projeto-info {
+        max-width: 70%;
+    }
+
+    #projeto-container .foto {
+        max-width: 30%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }
 
 /* Tablet paisagem e Notebook */

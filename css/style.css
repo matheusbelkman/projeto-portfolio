@@ -21,6 +21,7 @@
 }
 
 body {
+    height: 100dvh;
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
@@ -101,6 +102,10 @@ section#ficha div#social ul li a i {
     color: var(--destaque);
 }
 
+section#ficha div#social ul li a i:hover {
+    color: var(--destaque-inverso);
+}
+
 section#detalhes {
     grid-column: 2 / 3;
 }
@@ -156,7 +161,7 @@ article h2 {
 
 #formacao-container {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     gap: 20px;
 }
 
@@ -190,4 +195,60 @@ article h2 {
 
 #formacao-container .instituicao {
     font-size: 1em;
+}
+
+#projeto-container {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 20px;
+}
+
+#projeto-container .projeto {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    background-color: var(--fundo-principal);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--destaque);
+}
+
+#projeto-container .foto {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#projeto-container .titulo {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#projeto-container .desc {
+    margin-bottom: 10px;
+}
+
+#projeto-container a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0077ff;
+}
+
+#projeto-container a:hover {
+    color: var(--destaque-inverso);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    text-align: center;
+    padding: 2px;
+}
+
+footer p {
+    font-size: 0.7em;
 }
