@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/responsivo.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <script src="https://kit.fontawesome.com/5ae6227cee.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -22,7 +23,95 @@
         </nav>
     </header>
     <main>
-        <h1>Em breve...</h1>
+        <section id="ficha"> <!-- Primeira Section -->
+            <img src="img/matheus-perfil-pequena.jpg" alt="Matheus Belkman" class="foto">
+            <h1>Matheus Belkman</h1>
+            <p>Graduando em Análise e Desenvolvimento de Sistemas.</p>
+            <p>Apaixonado pelo Ecossistema JavaScript.</p>
+            <div id="social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matheusbelkman/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/matheusbelkman" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/mpozzabr/" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="detalhes"> <!-- Segunda Section -->
+            <article id="skills"> <!-- Article Skills -->
+                <h2><span class="material-symbols-outlined">person_play</span> Skills</h2>
+
+                <div id="skill-container">
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="porcent">90%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="porcent">80%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="porcent">70%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-git-alt"></i> Git e GitHub</span>
+                            <span class="porcent">80%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-sitemap"></i> Organização</span>
+                            <span class="porcent">100%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-people-group"></i> Comunicação</span>
+                            <span class="porcent">70%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="formacao"> <!-- Article Formação -->
+                <h2><span class="material-symbols-outlined">school</span> Formação</h2>
+            </article>
+
+            <article id="projetos"> <!-- Article Projetos -->
+                <h2> <span class="material-symbols-outlined">cases</span> Projetos</h2>
+            </article>
+        </section>
     </main>
     <footer>
 

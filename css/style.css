@@ -31,13 +31,13 @@ header {
     color: var(--texto);
     padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 nav#menu ul{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 nav#menu ul li a {
@@ -57,4 +57,99 @@ nav#menu ul li a:hover {
 
 nav#menu ul li a span {
     font-size: 1.8em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section#ficha {
+    grid-column: 2 / 3;
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#ficha img.foto {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 3px solid var(--fundo-card);
+    outline: 3px solid var(--destaque);
+    display: block;
+    margin: 10px auto 30px auto;
+}
+
+section#ficha h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--destaque);
+    margin: 15px 0;
+}
+
+section#ficha div#social ul {
+    display: flex;
+    gap: 23px;
+    margin-top: 15px;
+}
+
+section#ficha div#social ul li a i {
+    font-size: 25px;
+    color: var(--destaque);
+}
+
+section#detalhes {
+    grid-column: 2 / 3;
+}
+
+article {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: var(--destaque);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+#skill-container .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skill-container .nome {
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#skill-container .porcent {
+    font-weight: bold;
+    color: var(--destaque);
+}
+
+#skill-container .barra {
+    background-color: var(--fundo-principal);
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+}
+
+#skill-container .progresso {
+    background-color: var(--destaque-inverso);
+    height: 100%;
+    border-radius: 4px;
 }
