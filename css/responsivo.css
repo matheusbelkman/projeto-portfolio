@@ -26,7 +26,41 @@
 
 /* Tablet paisagem e Notebook */
 @media screen and (min-width: 1024px) {
+    header {
+        justify-content: right;
+    }
 
+    nav#menu ul {
+        gap: 5px;
+    }
+
+    main {
+        grid-template-columns: auto 300px 1fr auto;
+    }
+
+    section#ficha {
+        grid-column: 2 / 3;
+        height: fit-content;
+        position: sticky;
+        top: 95px;
+    }
+
+    section#ficha h1 {
+        text-align: center;
+        line-height: 1em;
+    }
+
+    section#ficha p {
+        text-align: center;
+    }
+
+    section#ficha div#social ul {
+        justify-content: center;
+    }
+
+    section#detalhes {
+        grid-column: 3 / 4;
+    }
 }
 
 /* Desktop e TV */

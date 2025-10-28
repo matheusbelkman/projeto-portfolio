@@ -21,7 +21,6 @@
 }
 
 body {
-    height: 100dvh;
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
@@ -34,9 +33,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-nav#menu ul{
+nav#menu ul {
     display: flex;
     gap: 20px;
 }
